@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #8d7bd6;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+h1{
+    text-align: center;
+    margin: 100px auto 50px;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+form{
+    width: 90%;
+    max-width: 600px;
+    margin: auto;
+    height: 80px;
+    display: flex;
+    align-items:center;
+    background: #b5b6c2;
+    border-radius: 50px;
+}
+
+form input{
+    flex: 1;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    color: #fff;
+    font-size: 25px;
+    padding: 20px;
+}
+
+form button{
+    padding: 0 40px;
+    height: 100%;
+    border: 0;
+    outline: 0;
+    background: #3ef126;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+form button:hover{
+    background: #ff3929;
+}
+
+::placeholder{
+    color: #fff;
+    font-size: 25px;
+}
+
+#show-more-btn{
+    background: #ff3929;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 10px auto 100px;
+    display: none;
+}
+
+#search-result{
+    width: 80%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap:40px;
+}
+
+#search-result img{
+    width: 100%;
+    height: 330px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+#search-result img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+@media only screen and (max-width: 600px){
+    form input{
+        font-size: 20px;
+        padding: 10px;
+    }
+    form button{
+        font-size: 20px;
+        padding: 10px 15px;
+    }
+    #search-result{
+        grid-template-columns: 1fr;
+    }
+    #show-more-btn{
+        display: none;
+    }
+    #search-result img{
+        height: 200px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    form{
+        height: 60px;
+    }
+    body{
+        background-color: #8d7bd6;
+    }
+    .container h2{
+        font-size: 1.5vw;
+    }
+    .prompt-box{
+        width: 100%;
+        height: 80px;
+    }
+    .img{
+        width: 200px;
+        height: 100%;
+    }
+    #search-result img:hover{
+        transform: scale(1.1);
+        transition: transform 0.3s ease-in-out;
+    }
+}
